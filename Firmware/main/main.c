@@ -102,9 +102,9 @@ int32_t main()
 
     x35_TIM4_init();
     x35_TIM2_init();
-    x35_TIM1_Init();
-    x35_dma_init();
-    x35_adc1_init();
+    /*x35_TIM1_Init();*/
+    /*x35_dma_init();*/
+    /*x35_adc1_init();*/
 
     multiTimerInstall(tim_task_get_tick);
     multiTimerStart(&_TIM_100Hz, 100, _TIM_callback_100Hz, NULL); /**5 ms repeating*/
