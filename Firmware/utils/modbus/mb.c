@@ -254,10 +254,9 @@ mb_res_t mb_rtu_write_data(uint8_t * pdu_data_frame_p,
     register_start_nr = index;
     register_end_nr = index + num;
 
-    info("start:%d, end:%d", 
+    /*info("start:%d, end:%d", 
         register_start_nr, 
-        register_end_nr
-    );
+        register_end_nr);*/
 
     return MB_RES_NONE;
 }

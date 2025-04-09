@@ -16,6 +16,7 @@
  *********************/
 
 #define MB_SEND_BYTE(buf, len)
+#define MB_SEND_EN(en)
 
 /**********************
  *  STATIC VARIABLES
@@ -125,7 +126,9 @@ bool mb_rtu_set_slave_addr(uint8_t slave_addr)
  */
 void mb_rtu_send_bytes(uint8_t * data_p, uint16_t len)
 {
+    MB_SEND_EN(true);
     MB_SEND_BYTE(data_p, len);
+    MB_SEND_EN(false);
 }
 
 /**
