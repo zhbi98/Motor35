@@ -17,7 +17,7 @@
  **********************/
 
 void SystemClock_Config();
-void _TIM2_callback_20kHz();
+void _TIM2_callback_10kHz();
 void _TIM1_callback_100Hz();
 void Error_Handler();
 int __fputs(const char * format, ...);

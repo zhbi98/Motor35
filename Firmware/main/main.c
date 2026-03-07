@@ -163,7 +163,7 @@ extern _cali_attr_t cali;
  * turn right turn in the process to collect 
  * and store encoder output values.
  */
-void _TIM2_callback_20kHz()
+void _TIM2_callback_10kHz()
 {
     __HAL_TIM_CLEAR_IT(&htim2, TIM_IT_UPDATE);
 

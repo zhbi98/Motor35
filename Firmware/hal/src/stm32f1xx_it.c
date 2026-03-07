@@ -165,7 +165,7 @@ void TIM1_UP_IRQHandler()
 void TIM2_IRQHandler()
 {
     /* USER CODE BEGIN TIM2_IRQn 0 */
-    _TIM2_callback_20kHz(); return;
+    _TIM2_callback_10kHz(); return;
     /* USER CODE END TIM2_IRQn 0 */
     HAL_TIM_IRQHandler(&htim2);
     /* USER CODE BEGIN TIM2_IRQn 1 */

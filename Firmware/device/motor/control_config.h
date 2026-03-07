@@ -64,7 +64,7 @@ extern "C" {
 #define _Move_Rated_DownCurrentRate	((int32_t)(20 * _Current_Rated_Current))	/**< (固件额定减流梯度)(20倍额定/s)*/
 
 /****************************************  控制器频率配置区  ****************************************/
-#define CONTROL_FREQ_HZ   (20000)                     /**< 控制频率_hz*/
+#define CONTROL_FREQ_HZ   (10000)                     /**< 控制频率_hz*/
 #define CONTROL_PERIOD_US (1000000 / CONTROL_FREQ_HZ) /**< 控制周期_us*/
 
 /*void Control_Config_Init_Static(void);  // 控制静态配置*/
